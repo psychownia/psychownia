@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona z menu</title>
+    <title>Psychownia</title>
+    
+    <!-- Ikonka w zakładce -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Czcionka Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Ikonki FontAwesome -->
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+
+
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .navbar {
-            background-color: #3F4D56;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-around;
-            padding: 15px 0;
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
         }
-        .navbar a {
-            color: #F6E09A;
+        a {
+            color: rgb(253, 43, 236);
             text-decoration: none;
-            padding: 14px 20px;
-            font-size: 18px;
+            font-weight: bold;
         }
-        .navbar a:hover {
-            background-color: #3F4D56;
-            border-radius: 5px;
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .kontakt {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
+
+    
 <body>
 
     <div class="navbar">
