@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychownia</title>
@@ -13,7 +13,6 @@
 
     <!-- Ikonki FontAwesome -->
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
-
 
     <style>
         * {
@@ -48,20 +47,7 @@
             border-radius: 8px;
             box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
         }
-    </style>
-</head>
-
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona z menu</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+        
         .navbar {
             background-color: #3F4D56;
             overflow: hidden;
@@ -79,99 +65,98 @@
             background-color: #3F4D56;
             border-radius: 5px;
         }
+
+        /* Przestrzeń poniżej nagłówków */
+        h1, h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Ogólne odstępy między akapitami */
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Lista - odstępy między elementami */
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        /* Ogólne odstępy w artykule */
+        article {
+            margin-bottom: 50px;
+        }
+        
+        /* Przycisk tematy */
+        .tematy-przycisk button, .tematy-przyciski-obok button {
+            padding: 10px 20px;
+            background-color: #FDE49C;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .tematy-przycisk button:hover, .tematy-przyciski-obok button:hover {
+            background-color: #F8D73D;
+        }
+
+        .tematy-przyciski-obok button {
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Nawigacja -->
     <div class="navbar">
         <a href="index.html" style="display: flex; align-items: center;">
-            <img src="button1.ico" alt="artykuly" width="50" height="50" style="margin-right: 8px;"> Strona główna</a>
-        <a href="artykuly.html"style="display: flex; align-items: center;">
-            <img src="button1.ico" alt="artykuly" width="50" height="50" style="margin-right: 8px;"> Artykuły
+            <img src="button1.ico" alt="Strona główna" width="50" height="50" style="margin-right: 8px;"> Strona główna
+        </a>
+        <a href="artykuly.html" style="display: flex; align-items: center;">
+            <img src="button1.ico" alt="Artykuły" width="50" height="50" style="margin-right: 8px;"> Artykuły
+        </a>
         <a href="kontakt.html" style="display: flex; align-items: center;">
-            <img src="button1.ico" alt="artykuly" width="50" height="50" style="margin-right: 8px;"> Kontakt</a>
+            <img src="button1.ico" alt="Kontakt" width="50" height="50" style="margin-right: 8px;"> Kontakt
+        </a>
     </div>
 
     <div class="tematy-przycisk">
         <button onclick="window.location.href='tematy.html'">Tematy artykułów</button>
     </div>
-    
-
-
 
     <div class="tematy-przyciski-obok">
         <button onclick="window.location.href='depresja.html'">Depresja</button>
         <button onclick="window.location.href='zaburzenia-odzywiania.html'">Zaburzenia odżywiania</button>
         <button onclick="window.location.href='pewnosc-siebie.html'">Pewność siebie</button>
     </div>
-    
-    <article>
-        <!-- Twój artykuł tutaj -->
+
+    <!-- Artykuł -->
+    <article style="text-align: center; background-color: white; padding: 30px; border: 2px solid #FDE49C; border-radius: 10px; max-width: 800px; margin: 40px auto;">
+        <h1 style="font-size: 36px; color: #24303A; margin-bottom: 30px;"><strong>Depresja a stres – nie lekceważ sygnałów</strong></h1>
+        <img src="depresja.jpg" alt="Obrazek ilustrujący temat depresji" style="width:22%; height:auto; margin-top:10px; display:block; margin-left:auto; margin-right:auto;">
+        <p>Depresja to poważna choroba, która często rozwija się na tle przewlekłego stresu...</p>
+
+        <h2 style="margin-bottom: 20px;"><strong>Etapy depresji, które warto dostrzec na czas.</strong></h2>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li><strong>Pierwsze oznaki:</strong> Zaczynasz czuć się zmęczony...</li>
+            <li><strong>Izolacja:</strong> W miarę jak stres się nasila...</li>
+            <li><strong>Chroniczne zmęczenie:</strong> Codzienne obowiązki stają się trudne...</li>
+            <li><strong>Pogłębienie problemów:</strong> Objawy stają się silniejsze...</li>
+        </ul>
+
+        <p>Depresja nie pojawia się z dnia na dzień...</p>
+
+        <h2 style="margin-bottom: 20px;"><strong>Co możesz zrobić?</strong></h2>
+        <p>Depresja związana ze stresem wymaga działań, które pomogą wrócić do równowagi...</p>
+
+        <h2 style="margin-bottom: 20px;">Podsumowanie</h2>
+        <p>Trening umysłu jest niezbędny w dzisiejszym świecie...</p>
     </article>
-    
 
-
-    
-
-</body>
-</html>
-
-
-
-
-<style>
-    /* Przestrzeń poniżej nagłówków */
-    h1, h2 {
-        margin-bottom: 30px; /* Przestrzeń poniżej nagłówków */
-    }
-
-    /* Ogólne odstępy między akapitami */
-    p {
-        margin-bottom: 20px; /* Przestrzeń poniżej każdego akapitu */
-        line-height: 1.6; /* Większa przestrzeń między liniami w akapicie */
-    }
-
-    /* Lista - odstępy między elementami */
-    ul li {
-        margin-bottom: 15px; /* Przestrzeń między punktami listy */
-    }
-
-    /* Ogólne odstępy w artykule */
-    article {
-        margin-bottom: 50px; /* Odstęp poniżej całego artykułu */
-    }
-</style>
-
-
-<<article style="text-align: center; background-color: white; padding: 30px; border: 2px solid #FDE49C; border-radius: 10px; max-width: 800px; margin: 40px auto;">
-    <h1 style="font-size: 36px; color: #24303A; margin-bottom: 30px;"><strong>Depresja a stres – nie lekceważ sygnałów</strong></h1>
-    <img src="depresja.jpg" alt="Obrazek ilustrujący temat depresji" style="width:22%; height:auto; margin-top:10px; display:block; margin-left:auto; margin-right:auto;">
-
-    <p style="margin-bottom: 20px;">Depresja to poważna choroba, która często rozwija się na tle przewlekłego stresu. Życie w ciągłym napięciu, nieustanne zmagania z problemami i presja mogą prowadzić do wypalenia psychicznego. Choć stres jest naturalną częścią życia, gdy trwa zbyt długo, może mieć poważne konsekwencje – w tym prowadzić do depresji.</p>
-
-    <h2 style="margin-bottom: 20px;"><strong>Etapy depresji, które warto dostrzec na czas.</strong></h2>
-
-    <ul style="list-style-type: none; padding: 0; margin: 0;">
-        <li style="text-align: center; margin-bottom: 10px;"><strong>Pierwsze oznaki:</strong> Zaczynasz czuć się zmęczony, przygnębiony, masz trudności z koncentracją? To mogą być pierwsze objawy depresji. Często je lekceważymy, myśląc, że to tylko chwilowy spadek nastroju.</li>
-        <li style="text-align: center; margin-bottom: 10px;"><strong>Izolacja:</strong> W miarę jak stres się nasila, możesz zacząć unikać kontaktów z innymi. To poczucie samotności pogłębia problemy, które zaczynają być coraz bardziej widoczne.</li>
-        <li style="text-align: center; margin-bottom: 10px;"><strong>Chroniczne zmęczenie:</strong> Codzienne obowiązki stają się trudne do wykonania. Czujesz się wypalony i nie masz energii do niczego. Brak nadziei na lepsze jutro to częsty objaw depresji.</li>
-        <li style="text-align: center; margin-bottom: 10px;"><strong>Pogłębienie problemów:</strong> Objawy stają się silniejsze – masz trudności ze snem, brak apetytu, myśli o beznadziei. To moment, kiedy depresja staje się bardziej widoczna i wymaga pomocy.</li>
-    </ul>
-
-    <p style="margin-bottom: 20px;">Depresja nie pojawia się z dnia na dzień. Wcześnie zauważone objawy mogą pomóc w szybkim zareagowaniu. Oto etapy, które warto rozpoznać:</p>
-
-    <h2 style="margin-bottom: 20px;"><strong>Co możesz zrobić?</strong></h2>
-    <p style="margin-bottom: 20px;">Depresja związana ze stresem wymaga działań, które pomogą wrócić do równowagi. Psychoterapia, rozmowa z bliskimi, techniki relaksacyjne, jak medytacja czy joga, mogą zdziałać cuda. Ważne jest, abyś nie czekał, aż będzie za późno. Zadbaj o siebie i nie pozwól, by stres przejął kontrolę nad twoim życiem.</p>
-
-    <p style="margin-bottom: 20px;">Pamiętaj: depresja to choroba, którą można pokonać. Czasami wystarczy zrobić pierwszy krok i poprosić o pomoc. Nie czekaj – warto zacząć działać, zanim będzie za późno. Ty też zasługujesz na szczęście i spokój.</p>
-
-    <h2 style="margin-bottom: 20px;">Podsumowanie</h2>
-    <p style="margin-bottom: 20px;">Trening umysłu jest niezbędny w dzisiejszym świecie, w którym musimy radzić sobie z wieloma zadaniami jednocześnie. Regularne ćwiczenia umysłowe, jak medytacja, gry logiczne i aktywność fizyczna, pomagają w poprawie koncentracji, pamięci i ogólnej sprawności umysłowej.</p>
-</article>
-
-<footer>
-    <p>&copy; 2025 Psychownia. Wszystkie prawa zastrzeżone.</p>
-</footer>
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 Psychownia. Wszystkie prawa zastrzeżone.</p>
+    </footer>
 
 </body>
 </html>
