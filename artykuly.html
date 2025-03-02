@@ -91,24 +91,76 @@
     /* Przestrzeń poniżej nagłówków */
     h1, h2 {
         margin-bottom: 30px; /* Przestrzeń poniżej nagłówków */
+        font-family: 'Roboto', sans-serif;
+        color: #333;
     }
 
     /* Ogólne odstępy między akapitami */
     p {
         margin-bottom: 20px; /* Przestrzeń poniżej każdego akapitu */
         line-height: 1.6; /* Większa przestrzeń między liniami w akapicie */
+        font-size: 16px;
+        color: #555;
     }
 
     /* Lista - odstępy między elementami */
     ul li {
         margin-bottom: 15px; /* Przestrzeń między punktami listy */
+        font-size: 16px;
+        color: #444;
     }
 
     /* Ogólne odstępy w artykule */
     article {
         margin-bottom: 50px; /* Odstęp poniżej całego artykułu */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px; /* Zaokrąglone rogi */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Cień, aby uzyskać efekt 3D */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Płynne przejścia */
+    }
+
+    /* Dodanie efektu przy najechaniu na artykuł */
+    article:hover {
+        transform: translateY(-5px); /* Podnosi element */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Większy cień, aby wyglądało jakby "unosiło się" */
+    }
+
+    /* Tło sekcji artykułowej */
+    article::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+        border-radius: 15px;
+        z-index: -1; /* Tło poniżej zawartości */
+        box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.1); /* Delikatny cień wewnętrzny */
+    }
+
+    /* Nagłówki z efektem fiszki */
+    h1, h2 {
+        font-family: 'Roboto', sans-serif;
+        color: #3F4D56;
+        background: linear-gradient(to right, #F1E4B3, #D4C67C); /* Kolorystyka przypominająca papier */
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Stylowanie listy */
+    ul {
+        padding-left: 20px;
+    }
+
+    /* Dodatkowy cień dla artykułów */
+    article {
+        position: relative;
     }
 </style>
+
 
 
 <article style="text-align: center; background-color: white; padding: 30px; border: 2px solid #FDE49C; border-radius: 10px; max-width: 800px; margin: 40px auto;">
